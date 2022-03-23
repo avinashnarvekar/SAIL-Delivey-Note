@@ -35,14 +35,14 @@ jenv = {
 }
 
 doctype_js = {
-	"Delivery Note" : "sail_bpm/custom_scripts/delivery_note/delivery_note.js",
+#	"Delivery Note" : "sail_bpm/custom_scripts/delivery_note/delivery_note.js",
 	"Stock Entry": "sail_bpm/custom_scripts/stock_entry/stock_entry.js"
 }
 
 doc_events = {
-	"Delivery Note": {
-		"validate":"sail_bpm.sail_bpm.custom_scripts.delivery_note.delivery_note.validate"
-	},
+#	"Delivery Note": {
+#		"validate":"sail_bpm.sail_bpm.custom_scripts.delivery_note.delivery_note.validate"
+#	},
 	"Stock Entry": {
 		"after_insert": "sail_bpm.sail_bpm.custom_scripts.stock_entry.stock_entry.make_batches",
 		"validate": "sail_bpm.sail_bpm.custom_scripts.stock_entry.stock_entry.process_serial_no_and_batch_no"
