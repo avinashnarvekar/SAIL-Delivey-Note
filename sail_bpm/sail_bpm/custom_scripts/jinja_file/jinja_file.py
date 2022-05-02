@@ -50,8 +50,8 @@ def get_delivery_note_data(doc):
 
 def add_data(data , num):
 	
-	if num%35 == 0:
-		if ((num // 35)) % 4 == 0 or num == 0:
+	if num%36 == 0:
+		if ((num // 36)) % 4 == 0 or num == 0:
 			if num ==0:
 				return """<div class='row'> <div class='column' style='margin-left:50px'  >""" + data
 			else:
